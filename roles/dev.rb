@@ -11,6 +11,7 @@ run_list(
   'recipe[git]',
   'recipe[mercurial]',
   'recipe[zsh]',
+  'recipe[chsh]',
   'recipe[tmux]',
   'recipe[vim]',
   'recipe[ctags]',
@@ -21,5 +22,6 @@ run_list(
   'recipe[python]',
   'recipe[lua]',
   'recipe[google-chrome]',
-  'recipe[dotfiles]'
+  'recipe[dotfiles]',
+  'recipe[desktop]'
 )

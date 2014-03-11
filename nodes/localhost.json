@@ -14,5 +14,6 @@
   },
   "readline": {
     "packages": ["libreadline-dev", "libreadline5"]
-  }
+  },
+  "dotfiles": "yuu"
 }
