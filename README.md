@@ -4,6 +4,7 @@ chef-dev
 ## Requirements
 
 - ubuntu, linux mint
+- openssh-server
 - ruby
 
 ## Setup
@@ -17,3 +18,7 @@ $ bundle exec knife solo init .
 $ bundle exec knife solo prepare localhost
 $ bundle exec knife solo cook localhost
 ```
+
+## Packages
+
+[run_list](https://github.com/calorie/chef-dev/blob/master/roles/dev.rb)
