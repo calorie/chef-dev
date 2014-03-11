@@ -1,5 +1,6 @@
 {
   "run_list": ["role[dev]"],
+  "user": "yuu",
   "tz": "Asia/Tokyo",
   "rbenv": {
     "install_pkgs": ["git-core", "grep"],
@@ -15,5 +16,11 @@
   "readline": {
     "packages": ["libreadline-dev", "libreadline5"]
   },
-  "dotfiles": "yuu"
+  "authorization": {
+    "sudo": {
+      "groups": ["yuu"],
+      "users": ["yuu"],
+      "passwordless": "true"
+    }
+  }
 }
