@@ -5,6 +5,8 @@ run_list(
   'recipe[japanese]',
   'recipe[timezone]',
   'recipe[build-essential]',
+  'recipe[openssl]',
+  'recipe[readline]',
   'recipe[curl]',
   'recipe[git]',
   'recipe[mercurial]',
