@@ -20,4 +20,5 @@ bash 'setup dotfiles' do
   code <<-EOH
     echo y|#{dotfiles}/script/setup
   EOH
+  not_if { ::File.exists?('/home/yuu/.vimrc') }
 end
