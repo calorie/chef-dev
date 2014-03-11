@@ -2,6 +2,8 @@
   "run_list": ["role[dev]"],
   "tz": "Asia/Tokyo",
   "rbenv": {
+    "install_pkgs": ["git-core", "grep"],
+    "user_home_root": "/home",
     "rubies": ["2.1.1"],
     "global": "2.1.1",
     "gems": {
