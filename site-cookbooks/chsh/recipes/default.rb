@@ -14,6 +14,4 @@ bash "Set vagrant's shell to zsh" do
     chsh -s $(which zsh) #{user}
   EOT
   not_if "test \"$(which zsh)\" = \"$(grep #{user} /etc/passwd | cut -d: -f7)\""
-  user user
-  group user
 end
