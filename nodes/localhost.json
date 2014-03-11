@@ -4,7 +4,7 @@
   "user": "yuu",
   "tz": "Asia/Tokyo",
   "rbenv": {
-    "install_pkgs": ["git-core", "grep"],
+    "install_pkgs": ["libssl-dev", "git-core", "grep"],
     "user_home_root": "/home",
     "rubies": ["2.1.1"],
     "global": "2.1.1",
