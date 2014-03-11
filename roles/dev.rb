@@ -2,7 +2,6 @@ name 'dev'
 description 'development'
 run_list(
   'recipe[apt]',
-  'recipe[base]',
   'recipe[japanese]',
   'recipe[timezone]',
   'recipe[build-essential]',
