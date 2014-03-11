@@ -1,5 +1,6 @@
 {
   "run_list": ["role[dev]"],
+  "platform": "ubuntu",
   "user": "yuu",
   "tz": "Asia/Tokyo",
   "rbenv": {
