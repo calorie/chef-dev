@@ -17,7 +17,7 @@ run_list(
   'recipe[cmake]',
   'recipe[fontforge]',
   'recipe[ruby_build]',
-  'recipe[rbenv::system]',
+  'recipe[rbenv::user]',
   'recipe[python]',
   'recipe[lua]',
   'recipe[google-chrome]',
