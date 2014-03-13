@@ -7,10 +7,10 @@
 # All rights reserved - Do Not Redistribute
 #
 
-user = node['user']
+user_name = node['user']
 
 bash "Set vagrant's shell to zsh" do
   code <<-EOT
-    chsh -s /bin/zsh #{user}
+    chsh -s /bin/zsh #{user_name}
   EOT
 end

@@ -7,15 +7,15 @@
 # All rights reserved - Do Not Redistribute
 #
 
-user = node['user']
-dotfiles = "/home/#{user}/dotfiles"
+user_name = node['user']
+dotfiles = "/home/#{user_name}/dotfiles"
 
 git dotfiles do
   repository 'https://github.com/calorie/dotfiles.git'
   reference 'master'
   action :sync
-  user user
-  group user
+  user user_name
+  group user_name
 end
 
 bash 'setup dotfiles' do
@@ -23,7 +23,7 @@ bash 'setup dotfiles' do
   code <<-EOH
     echo y|#{dotfiles}/script/setup
   EOH
-  not_if { ::File.exists?("/home/#{user}/.vimrc") }
-  user user
-  group user
+  not_if { ::File.exists?("/home/#{user_name}/.vimrc") }
+  user user_name
+  group user_name
 end
