@@ -9,8 +9,6 @@
 
 user_name = node['user']
 
-bash "Set vagrant's shell to zsh" do
-  code <<-EOT
-    chsh -s /bin/zsh #{user_name}
-  EOT
+execute "set zsh as default shell" do
+  command "chsh -s /bin/zsh #{user_name}"
 end
