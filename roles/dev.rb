@@ -5,7 +5,6 @@ run_list(
   'recipe[sudo]',
   'recipe[japanese]',
   'recipe[build-essential]',
-  'recipe[openssl]',
   'recipe[readline]',
   'recipe[curl]',
   'recipe[git]',
