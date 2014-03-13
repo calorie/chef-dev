@@ -4,7 +4,6 @@ run_list(
   'recipe[apt]',
   'recipe[sudo]',
   'recipe[japanese]',
-  'recipe[timezone]',
   'recipe[build-essential]',
   'recipe[openssl]',
   'recipe[readline]',
