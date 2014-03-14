@@ -8,6 +8,7 @@ run_list(
   'recipe[readline]',
   'recipe[curl]',
   'recipe[git]',
+  'recipe[tig]',
   'recipe[mercurial]',
   'recipe[zsh]',
   'recipe[chsh]',
@@ -20,6 +21,7 @@ run_list(
   'recipe[python]',
   'recipe[lua]',
   'recipe[google-chrome]',
+  'recipe[trash-cli]',
   'recipe[dotfiles]',
   'recipe[desktop]'
 )
