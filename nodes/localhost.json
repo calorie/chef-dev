@@ -10,6 +10,22 @@
       {
         "name": "ruby-build",
         "git_url": "https://github.com/sstephenson/ruby-build.git"
+      },
+      {
+        "name": "rbenv-gem-rehash",
+        "git_url": "https://github.com/sstephenson/rbenv-gem-rehash.git"
+      },
+      {
+        "name": "rbenv-default-gems",
+        "git_url": "https://github.com/sstephenson/rbenv-default-gems.git"
+      },
+      {
+        "name": "rbenv-binstubs",
+        "git_url": "https://github.com/ianheggie/rbenv-binstubs.git"
+      },
+      {
+        "name": "rbenv-ctags",
+        "git_url": "https://github.com/tpope/rbenv-ctags.git"
       }
     ],
     "user_installs": [
