@@ -41,9 +41,6 @@
       }
     ]
   },
-  "ruby_build": {
-    "upgrade": "sync"
-  },
   "readline": {
     "packages": ["libreadline-dev", "libreadline5"]
   },
