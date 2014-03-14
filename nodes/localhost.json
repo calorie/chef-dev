@@ -6,6 +6,12 @@
   "rbenv": {
     "install_pkgs": ["libssl-dev", "git-core", "grep"],
     "user_home_root": "/home",
+    "plugins": [
+      {
+        "name": "ruby-build",
+        "git_url": "https://github.com/sstephenson/ruby-build.git"
+      }
+    ],
     "user_installs": [
       {
         "user": "yuu",
@@ -18,9 +24,6 @@
         }
       }
     ]
-  },
-  "ruby_build": {
-    "upgrade": "sync"
   },
   "readline": {
     "packages": ["libreadline-dev", "libreadline5"]
