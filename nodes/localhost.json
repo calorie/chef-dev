@@ -8,6 +8,7 @@
     "user_installs": [
       {
         "user": "yuu",
+        "group": "yuu",
         "rubies": ["2.1.1"],
         "global": "2.1.1",
         "gems": {
