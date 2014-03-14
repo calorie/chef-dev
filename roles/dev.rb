@@ -17,6 +17,7 @@ run_list(
   'recipe[ctags]',
   'recipe[cmake]',
   'recipe[fontforge]',
+  'recipe[ruby_build]',
   'recipe[rbenv::user]',
   'recipe[python]',
   'recipe[lua]',

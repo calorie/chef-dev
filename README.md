@@ -7,15 +7,17 @@ chef-dev
 - openssh-server
 - libxslt-dev, libxml2-dev
 - ruby, ruby-dev
+- bundler
 
 ## Setup
 
 ```
+$ ssh-copy-id localhost
 $ git clone https://github.com/calorie/chef-dev.git
 $ cd chef-dev
+$ sed -i '' -e 's/yuu/your_user_name/g' nodes/localhost.json
 $ bundle install --path vendor/bundle
 $ bundle exec berks install -p cookbooks
-$ ssh-copy-id localhost
 $ bundle exec knife solo init .
 $ bundle exec knife solo prepare localhost
 $ sudo gem install bundler

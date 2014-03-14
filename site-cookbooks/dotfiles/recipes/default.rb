@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-user_name = node['user']
+user_name = node['dotfiles']['user']
 dotfiles = "/home/#{user_name}/dotfiles"
 
 git dotfiles do
