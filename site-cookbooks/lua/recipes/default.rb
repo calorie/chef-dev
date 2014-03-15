@@ -7,6 +7,14 @@
 # All rights reserved - Do Not Redistribute
 #
 
-package 'lua5.2' do
-  action :install
+pkgs = %w{
+  lua5.2
+  liblua5.2-dev
+  luarocks
+}
+
+pkgs.each do |pkg|
+  package pkg do
+    action :install
+  end
 end
