@@ -57,5 +57,19 @@
   },
   "dotfiles": {
     "user": "yuu"
+  },
+  "vvm-rb": {
+    "version": "latest",
+    "opts": [
+      "--enable-multibyte",
+      "--with-features=huge",
+      "--enable-fontset",
+      "--disable-selinux",
+      "--enable-pythoninterp",
+      "--enable-rubyinterp",
+      "--enable-xim",
+      "--enable-luainterp",
+      "--with-lua-prefix=/usr"
+    ]
   }
 }

@@ -23,6 +23,7 @@ run_list(
   'recipe[lua]',
   'recipe[google-chrome]',
   'recipe[trash-cli]',
+  'recipe[vvm-rb]',
   'recipe[dotfiles]',
   'recipe[desktop]'
 )
