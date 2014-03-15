@@ -3,6 +3,8 @@ chef-dev
 
 Provisioning development environment like BOXEN.
 
+chef-dev is NOT stable.
+
 ## Requirements
 
 - ubuntu, linux mint
@@ -16,16 +18,36 @@ Provisioning development environment like BOXEN.
 
 ```
 $ sudo apt-get install -y openssh-server libxslt-dev libxml2-dev ruby ruby-dev git-core
-$ sudo gem install bundler chef --no-rdoc --no-ri
-$ ssh-keygen
-$ ssh-copy-id localhost
+$ sudo gem install bundler --no-rdoc --no-ri
 $ git clone https://github.com/calorie/chef-dev.git
 $ cd chef-dev
+$ bundle install
+$ berks install -p cookbooks
+```
+
+### Chef Solo
+
+```
 $ sed -i '' -e "s/yuu/$USER/g" nodes/localhost.json
-$ bundle install --path vendor/bundle
-$ bundle exec berks install -p cookbooks
-$ bundle exec knife solo init .
-$ bundle exec knife solo cook localhost
+$ sudo chef-solo -c solo.rb -j nodes/localhost.json
+```
+
+### Knife Solo
+
+```
+$ sed -i '' -e "s/yuu/[user_name]/g" nodes/localhost.json
+$ knife solo init .
+$ knife solo prepare [user_name]@[host]
+$ knife solo cook [user_name]@[host] nodes/localhost.json
+```
+
+### Vagrant
+
+Install Vagrant, VirtualBox and:
+
+```
+$ sed -i '' -e "s/yuu/vagrant/g" nodes/localhost.json
+$ vagrant up
 ```
 
 ## Packages

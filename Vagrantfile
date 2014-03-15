@@ -78,6 +78,5 @@ Vagrant.configure("2") do |config|
     chef.add_role 'dev'
 
     chef.json = JSON.parse(Pathname(__FILE__).dirname.join('nodes', 'localhost.json').read)
-    chef.json.merge!({ user: 'vagrant' })
   end
 end
