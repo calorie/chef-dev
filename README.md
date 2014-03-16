@@ -11,7 +11,7 @@ chef-dev is NOT stable.
 - git-core
 - libxslt-dev, libxml2-dev
 - ruby, ruby-dev
-- bundler, chef
+- bundler
 
 ## Setup
 

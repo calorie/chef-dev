@@ -7,8 +7,15 @@
 # All rights reserved - Do Not Redistribute
 #
 
-package 'language-pack-ja' do
-  action :install
+pkgs = %w{
+  language-pack-ja
+  ibus-mozc
+}
+
+pkgs.each do |pkg|
+  package pkg do
+    action :install
+  end
 end
 
 bash 'japanese' do
