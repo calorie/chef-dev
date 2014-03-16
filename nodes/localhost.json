@@ -47,9 +47,15 @@
   },
   "authorization": {
     "sudo": {
-      "groups": ["yuu"],
+      "groups": ["admin", "sudo", "yuu"],
       "users": ["yuu"],
-      "passwordless": "true"
+      "passwordless": "true",
+      "sudoers_defaults": [
+        "env_reset",
+        "mail_badpass",
+        "secure_path=\"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"",
+        "timestamp_timeout = 1440"
+      ]
     }
   },
   "chsh": {
