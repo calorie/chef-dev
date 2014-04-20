@@ -16,7 +16,7 @@ chef-dev is NOT stable.
 ## Setup
 
 ```
-$ sudo apt-get install -y libxslt-dev libxml2-dev ruby ruby-dev git-core
+$ sudo apt-get install -y libxslt-dev libxml2-dev ruby ruby-dev git-core g++
 $ sudo gem install bundler --no-rdoc --no-ri
 $ git clone https://github.com/calorie/chef-dev.git
 $ cd chef-dev
