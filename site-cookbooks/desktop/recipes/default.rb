@@ -7,10 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
-user_name = node['user']
+user_name = node['desktop']['user']
 
 if user_name == 'vagrant'
-  package 'ubuntu-desktop' do
-    action :install
-  end
+  package 'ubuntu-desktop'
 end

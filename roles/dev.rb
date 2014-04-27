@@ -3,6 +3,10 @@ description 'development'
 run_list(
   'recipe[apt]',
   'recipe[sudo]',
+  'recipe[base]',
+  'recipe[locale]',
+  'recipe[ubuntu-change-source-list]',
+  'recipe[desktop]',
   'recipe[japanese]',
   'recipe[build-essential]',
   'recipe[readline]',
@@ -24,6 +28,5 @@ run_list(
   'recipe[google-chrome]',
   'recipe[trash-cli]',
   'recipe[vvm-rb]',
-  'recipe[dotfiles]',
-  'recipe[desktop]'
+  'recipe[dotfiles]'
 )

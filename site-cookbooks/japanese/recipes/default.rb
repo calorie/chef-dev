@@ -7,14 +7,12 @@
 # All rights reserved - Do Not Redistribute
 #
 
-pkgs = %w{
+%w{
   language-pack-ja
   ibus-mozc
-}
-
-pkgs.each do |pkg|
-  package pkg do
-    action :install
+}.each do |pkg|
+  execute pkg do
+    command "aptitude install -y #{pkg}"
   end
 end
 

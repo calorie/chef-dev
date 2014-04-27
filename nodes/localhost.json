@@ -2,15 +2,24 @@
   "run_list": ["role[dev]"],
   "platform": "ubuntu",
   "tz": "Asia/Tokyo",
+  "ubuntu": {
+    "mirror_site_url": "http://ftp.tsukuba.wide.ad.jp/Linux/ubuntu",
+    "version": "14.04",
+    "need_deb_src": true,
+    "need_update": false
+  },
   "rbenv": {
     "install_pkgs": ["libssl-dev", "git-core", "grep"],
     "user_home_root": "/home",
     "user_installs": [
       {
-        "user": "yuu",
-        "group": "yuu",
+        "user": "vagrant",
+        "group": "vagrant",
         "rubies": ["2.1.1"],
         "global": "2.1.1",
+        "environment": {
+          "RUBY_CONFIGURE_OPTS": "--with-openssl-dir=/usr --with-readline-dir=/usr/include/readline --enable-shared"
+        },
         "gems": {
           "2.1.1": [
             { "name": "bundler" },
@@ -47,12 +56,12 @@
     ]
   },
   "readline": {
-    "packages": ["libreadline-dev", "libreadline5"]
+    "packages": ["libreadline-dev", "libreadline6"]
   },
   "authorization": {
     "sudo": {
-      "groups": ["admin", "sudo", "yuu"],
-      "users": ["yuu"],
+      "groups": ["admin", "sudo", "vagrant"],
+      "users": ["vagrant"],
       "passwordless": "true",
       "sudoers_defaults": [
         "env_reset",
@@ -63,10 +72,13 @@
     }
   },
   "chsh": {
-    "user": "yuu"
+    "user": "vagrant"
   },
   "dotfiles": {
-    "user": "yuu"
+    "user": "vagrant"
+  },
+  "desktop": {
+    "user": "vagrant"
   },
   "vvm-rb": {
     "version": "latest",

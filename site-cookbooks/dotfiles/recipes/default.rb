@@ -23,7 +23,7 @@ bash 'setup dotfiles' do
   code <<-EOH
     echo y|#{dotfiles}/script/setup
   EOH
-  not_if { ::File.exists?("/home/#{user_name}/.vimrc") }
+  creates "/home/#{user_name}/.zshrc"
   user user_name
   group user_name
 end
