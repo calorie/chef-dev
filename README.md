@@ -3,28 +3,33 @@ chef-dev
 
 Provisioning development environment like BOXEN.
 
-chef-dev is NOT stable.
-
 ## Requirements
 
-- ubuntu, linux mint
+### ubuntu, linux mint
+
 - git-core
+- g++
 - libxslt-dev, libxml2-dev
 - ruby, ruby-dev
+- bundler
+
+### mac
+
 - bundler
 
 ## Setup
 
 ```
-$ sudo apt-get install -y libxslt-dev libxml2-dev ruby ruby-dev git-core g++
 $ sudo gem install bundler --no-rdoc --no-ri
 $ git clone https://github.com/calorie/chef-dev.git
 $ cd chef-dev
 $ bundle install
-$ berks install -p cookbooks
+$ berks vendor cookbooks
 ```
 
 ### Chef Solo
+
+ONLY ubuntu, linux mint, etc.
 
 ```
 $ sed -i '' -e "s/vagrant/$USER/g" nodes/localhost.json
