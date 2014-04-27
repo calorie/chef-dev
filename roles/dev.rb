@@ -11,6 +11,7 @@ run_list(
   'recipe[build-essential]',
   'recipe[readline]',
   'recipe[curl]',
+  'recipe[ag]',
   'recipe[git]',
   'recipe[tig]',
   'recipe[mercurial]',
