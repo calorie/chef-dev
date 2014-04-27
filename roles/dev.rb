@@ -26,6 +26,8 @@ run_list(
   'recipe[rbenv::user]',
   'recipe[python]',
   'recipe[lua]',
+  'recipe[golang]',
+  'recipe[docker]',
   'recipe[google-chrome]',
   'recipe[trash-cli]',
   'recipe[vvm-rb]',
