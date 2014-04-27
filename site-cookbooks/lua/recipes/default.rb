@@ -7,14 +7,11 @@
 # All rights reserved - Do Not Redistribute
 #
 
-pkgs = %w{
+%w{
   lua5.2
   liblua5.2-dev
   luarocks
-}
-
-pkgs.each do |pkg|
-  package pkg do
-    action :install
-  end
+  luajit
+}.each do |pkg|
+  package pkg
 end

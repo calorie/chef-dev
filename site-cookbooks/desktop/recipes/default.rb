@@ -7,8 +7,4 @@
 # All rights reserved - Do Not Redistribute
 #
 
-user_name = node['desktop']['user']
-
-if user_name == 'vagrant'
-  package 'ubuntu-desktop'
-end
+package 'ubuntu-desktop' if node['user'] == 'vagrant'

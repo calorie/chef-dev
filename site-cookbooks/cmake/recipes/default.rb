@@ -7,6 +7,4 @@
 # All rights reserved - Do Not Redistribute
 #
 
-package 'cmake' do
-  action :install
-end
+package 'cmake'

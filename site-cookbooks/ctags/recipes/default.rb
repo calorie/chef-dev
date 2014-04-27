@@ -7,6 +7,4 @@
 # All rights reserved - Do Not Redistribute
 #
 
-package 'exuberant-ctags' do
-  action :install
-end
+package 'exuberant-ctags'

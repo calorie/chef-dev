@@ -7,8 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
-user_name = node['chsh']['user']
+user_name = node['user']
 
-execute "set zsh as default shell" do
+execute 'set zsh as default shell' do
   command "chsh -s /bin/zsh #{user_name}"
 end

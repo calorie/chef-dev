@@ -7,6 +7,4 @@
 # All rights reserved - Do Not Redistribute
 #
 
-package 'trash-cli' do
-  action :install
-end
+package 'trash-cli'

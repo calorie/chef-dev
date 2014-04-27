@@ -7,6 +7,4 @@
 # All rights reserved - Do Not Redistribute
 #
 
-package 'fontforge' do
-  action :install
-end
+package 'fontforge'

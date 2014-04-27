@@ -1,4 +1,6 @@
 {
+  "user": "vagrant",
+  "group": "vagrant",
   "run_list": ["role[dev]"],
   "platform": "ubuntu",
   "tz": "Asia/Tokyo",
@@ -70,15 +72,6 @@
         "timestamp_timeout = 1440"
       ]
     }
-  },
-  "chsh": {
-    "user": "vagrant"
-  },
-  "dotfiles": {
-    "user": "vagrant"
-  },
-  "desktop": {
-    "user": "vagrant"
   },
   "vvm-rb": {
     "version": "latest",

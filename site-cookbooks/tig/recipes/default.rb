@@ -7,6 +7,4 @@
 # All rights reserved - Do Not Redistribute
 #
 
-package 'tig' do
-  action :install
-end
+package 'tig'
