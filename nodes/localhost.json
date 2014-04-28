@@ -86,5 +86,15 @@
       "--enable-luainterp",
       "--with-lua-prefix=/usr"
     ]
+  },
+  "sysv-rc-conf": {
+    "off": [
+      "bluetooth",
+      "dns-clean",
+      "pppd-dns",
+      "speech-dispatcher",
+      "usplash",
+      "saned"
+    ]
   }
 }

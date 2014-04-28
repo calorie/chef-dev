@@ -4,6 +4,7 @@ run_list(
   'recipe[apt]',
   'recipe[sudo]',
   'recipe[base]',
+  'recipe[sysv-rc-conf]',
   'recipe[locale]',
   'recipe[ubuntu-change-source-list]',
   'recipe[desktop]',
