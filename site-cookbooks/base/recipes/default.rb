@@ -7,6 +7,11 @@
 # All rights reserved - Do Not Redistribute
 #
 
+if node['platform'] == 'linuxmint'
+  node.automatic_attrs['platform'] = 'ubuntu'
+  node.automatic_attrs['platform_version'] = '13.10'
+end
+
 user_name  = node['user']
 user_group = node['group']
 
