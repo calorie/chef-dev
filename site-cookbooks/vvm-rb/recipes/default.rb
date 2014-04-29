@@ -13,13 +13,7 @@ version = node['vvm-rb']['version']
 opts    = node['vvm-rb']['opts'].join(' ')
 
 Array(node['rbenv']['user_installs']).each do |rbenv_user|
-  rbenv_gem "vvm-rb (#{rbenv_user['user']})" do
-    package_name  'vvm-rb'
-    user          rbenv_user['user']
-    root_path     rbenv_user['root_path'] if rbenv_user['root_path']
-    rbenv_version rbenv_user['global']
-  end
-
+  next unless rbenv_user['gems'][rbenv_user['global']].map { |h| h['name'] }.include?('vvm-rb')
   rbenv_script "vvm-rb install #{version}" do
     rbenv_version rbenv_user['global']
     user          rbenv_user['user']
