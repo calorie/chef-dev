@@ -39,6 +39,10 @@
         },
         "plugins": [
           {
+            "name": "ruby-build",
+            "git_url": "https://github.com/sstephenson/ruby-build.git"
+          },
+          {
             "name": "rbenv-update",
             "git_url": "https://github.com/rkh/rbenv-update.git"
           },
