@@ -19,16 +19,15 @@
         "group": "vagrant",
         "rubies": [
           {
-            "name": "2.1.1",
+            "name": "2.1.2",
             "environment": {
               "RUBY_CONFIGURE_OPTS": "--with-openssl-dir=/usr --with-readline-dir=/usr/include/readline --enable-shared"
-            },
-            "patch_url": "https://gist.github.com/mislav/a18b9d7f0dc5b9efc162.txt"
+            }
           }
         ],
-        "global": "2.1.1",
+        "global": "2.1.2",
         "gems": {
-          "2.1.1": [
+          "2.1.2": [
             { "name": "bundler" },
             { "name": "rubygems-update" },
             { "name": "pry" },
