@@ -1,6 +1,6 @@
 {
-  "user": "vagrant",
-  "group": "vagrant",
+  "user": "yuu",
+  "group": "yuu",
   "run_list": ["role[dev]"],
   "platform": "ubuntu",
   "tz": "Asia/Tokyo",
@@ -15,8 +15,8 @@
     "user_home_root": "/home",
     "user_installs": [
       {
-        "user": "vagrant",
-        "group": "vagrant",
+        "user": "yuu",
+        "group": "yuu",
         "rubies": [
           {
             "name": "2.1.2",
@@ -70,8 +70,8 @@
   },
   "authorization": {
     "sudo": {
-      "groups": ["admin", "sudo", "vagrant"],
-      "users": ["vagrant"],
+      "groups": ["admin", "sudo", "yuu"],
+      "users": ["yuu"],
       "passwordless": "true",
       "sudoers_defaults": [
         "env_reset",
