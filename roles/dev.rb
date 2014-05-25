@@ -30,6 +30,7 @@ run_list(
   'recipe[docker]',
   'recipe[google-chrome]',
   'recipe[trash-cli]',
+  'recipe[vagrant]',
   'recipe[vvm-rb]',
   'recipe[dotfiles]'
 )
