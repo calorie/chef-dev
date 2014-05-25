@@ -13,6 +13,7 @@ run_list(
   'recipe[readline]',
   'recipe[curl]',
   'recipe[ag]',
+  'recipe[apparmor]',
   'recipe[git]',
   'recipe[tig]',
   'recipe[mercurial]',
