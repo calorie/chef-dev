@@ -32,17 +32,17 @@ $ berks vendor cookbooks
 ONLY ubuntu, linux mint, etc.
 
 ```
-$ sed -i '' -e "s/vagrant/$USER/g" nodes/localhost.json
-$ sudo chef-solo -c solo.rb -j nodes/localhost.json
+$ sed -i '' -e "s/yuu/$USER/g" nodes/dev.json
+$ sudo chef-solo -c solo.rb -j nodes/dev.json
 ```
 
 ### Knife Solo
 
 ```
-$ sed -i '' -e "s/vagrant/[user_name]/g" nodes/localhost.json
+$ sed -i '' -e "s/yuu/[user_name]/g" nodes/dev.json
 $ knife solo init .
 $ knife solo prepare [user_name]@[host]
-$ knife solo cook [user_name]@[host] nodes/localhost.json
+$ knife solo cook [user_name]@[host] nodes/dev.json
 ```
 
 ### Vagrant
