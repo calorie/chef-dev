@@ -9,7 +9,7 @@
 
 if node['platform'] == 'linuxmint'
   node.automatic_attrs['platform'] = 'ubuntu'
-  node.automatic_attrs['platform_version'] = '13.10'
+  node.automatic_attrs['platform_version'] = '14.04'
 end
 
 user_name  = node['user']
