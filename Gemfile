@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'chef', '~> 11.12.2'
-gem 'berkshelf', '~> 3.1.1'
+gem 'chef'
+gem 'berkshelf'
 gem 'knife-solo',
   github: 'matschaffer/knife-solo',
   branch: 'master',
