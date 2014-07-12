@@ -1,6 +1,7 @@
 source 'https://api.berkshelf.com'
 
 cookbook 'apt'
+cookbook 'ark'
 cookbook 'sudo'
 cookbook 'timezone'
 cookbook 'build-essential'
