@@ -4,5 +4,6 @@ default['tex']['packages'] = %w{
   texlive-fonts-recommended
   texlive-fonts-extra
   texlive-math-extra
+  texlive-latex-extra
   zathura
 }
