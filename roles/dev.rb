@@ -29,6 +29,7 @@ run_list(
   'recipe[lua]',
   'recipe[golang]',
   'recipe[docker]',
+  'recipe[peco]',
   'recipe[google-chrome]',
   'recipe[trash-cli]',
   'recipe[dropbox]',
