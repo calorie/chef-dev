@@ -32,6 +32,7 @@ run_list(
   'recipe[golang]',
   'recipe[docker]',
   'recipe[peco]',
+  'recipe[direnv]',
   'recipe[google-chrome]',
   'recipe[trash-cli]',
   'recipe[dropbox]',
