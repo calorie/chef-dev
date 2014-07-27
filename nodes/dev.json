@@ -33,7 +33,8 @@
             { "name": "pry" },
             { "name": "tmuxinator" },
             { "name": "vvm-rb" },
-            { "name": "refe2" }
+            { "name": "refe2" },
+            { "name": "hub" }
           ]
         },
         "plugins": [
