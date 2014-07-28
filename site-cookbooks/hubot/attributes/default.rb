@@ -1,0 +1,1 @@
+default['hubot']['version'] = nil
