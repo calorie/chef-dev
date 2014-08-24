@@ -37,6 +37,8 @@ run_list(
   'recipe[trash-cli]',
   'recipe[dropbox]',
   'recipe[vagrant]',
+  'recipe[xsel]',
+  'recipe[dmenu]',
   'recipe[vvm-rb]',
   'recipe[dotfiles]'
 )
