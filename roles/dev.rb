@@ -27,7 +27,7 @@ run_list(
   'recipe[rbenv::user]',
   'recipe[python]',
   'recipe[lua]',
-  'recipe[npm]',
+  'recipe[nodejs]',
   'recipe[coffee-script]',
   'recipe[golang]',
   'recipe[docker]',

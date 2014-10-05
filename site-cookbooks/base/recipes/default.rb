@@ -10,6 +10,7 @@
 if node['platform'] == 'linuxmint'
   node.automatic_attrs['platform'] = 'ubuntu'
   node.automatic_attrs['platform_version'] = '14.04'
+  node.automatic_attrs['lsb']['codename'] = 'trusty'
 end
 
 user_name  = node['user']

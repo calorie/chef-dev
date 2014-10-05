@@ -7,9 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe 'npm'
+include_recipe 'nodejs'
 
-npm_package 'hubot' do
+nodejs_npm 'hubot' do
   version node['hubot']['version']
-  action  :install
 end

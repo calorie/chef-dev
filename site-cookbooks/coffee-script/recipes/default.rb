@@ -7,9 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe 'npm'
+include_recipe 'nodejs'
 
-npm_package 'coffee-script' do
+nodejs_npm 'coffee-script' do
   version node['coffee-script']['version']
-  action  :install
 end
