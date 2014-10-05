@@ -108,5 +108,23 @@
   },
   "docker": {
     "host": "tcp://127.0.0.1:4243"
+  },
+  "direnv": {
+    "version": "v2.4.0"
+  },
+  "dmenu": {
+    "version": "4.5"
+  },
+  "gecode": {
+    "version": "3.7.3"
+  },
+  "packer": {
+    "version": "0.7.1"
+  },
+  "peco": {
+    "version": "v0.2.10"
+  },
+  "vagrant": {
+    "version": "1.6.5"
   }
 }

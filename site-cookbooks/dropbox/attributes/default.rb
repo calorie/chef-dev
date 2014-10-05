@@ -1,3 +1,1 @@
-default['dropbox']['packages'] = %w{
-  dropbox
-}
+default['dropbox']['packages'] = %w(dropbox)
