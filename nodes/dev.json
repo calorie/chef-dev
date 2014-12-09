@@ -19,15 +19,15 @@
         "group": "yuu",
         "rubies": [
           {
-            "name": "2.1.2",
+            "name": "2.1.5",
             "environment": {
               "RUBY_CONFIGURE_OPTS": "--with-openssl-dir=/usr --with-readline-dir=/usr/include/readline --enable-shared"
             }
           }
         ],
-        "global": "2.1.2",
+        "global": "2.1.5",
         "gems": {
-          "2.1.2": [
+          "2.1.5": [
             { "name": "bundler" },
             { "name": "rubygems-update" },
             { "name": "pry" },

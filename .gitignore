@@ -15,3 +15,5 @@ bin/*
 /cookbooks/
 /.chef
 /vendor/bundle
+
+!/.ruby-version
