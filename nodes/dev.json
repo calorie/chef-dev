@@ -5,7 +5,7 @@
   "platform": "ubuntu",
   "tz": "Asia/Tokyo",
   "ubuntu": {
-    "mirror_site_url": "http://ftp.tsukuba.wide.ad.jp/Linux/ubuntu",
+    "mirror_site_url": "http://ftp.riken.jp/Linux/ubuntu/",
     "version": "14.04",
     "need_deb_src": true,
     "need_update": false
