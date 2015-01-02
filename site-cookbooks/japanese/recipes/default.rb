@@ -10,14 +10,6 @@
 %w{
   language-pack-ja
   ibus-mozc
-}.each do |pkg|
-  execute pkg do
-    command "aptitude install -y #{pkg}"
-  end
-end
+}.each { |pkg| package pkg }
 
-bash 'japanese' do
-  code <<-EOH
-  sudo dpkg-reconfigure locales
-  EOH
-end
+execute 'dpkg-reconfigure locales'
