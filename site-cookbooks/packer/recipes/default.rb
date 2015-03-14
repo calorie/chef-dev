@@ -13,7 +13,7 @@ packer = ::File.join('/usr', 'local', 'bin', 'packer')
 
 remote_file ::File.join(Chef::Config[:file_cache_path], zip) do
   source node['packer']['url']
-  not_if { ::File.exists?(packer) }
+  not_if { ::File.exist?(packer) }
 end
 
 bash 'extract_module' do
@@ -22,5 +22,5 @@ bash 'extract_module' do
     unzip #{zip} -d #{src}
     mv #{::File.join(src, 'packer*')} /usr/local/bin/
   EOH
-  not_if { ::File.exists?(packer) }
+  not_if { ::File.exist?(packer) }
 end

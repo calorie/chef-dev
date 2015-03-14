@@ -20,14 +20,14 @@ dmenu = ::File.join('/usr', 'local', 'bin', 'dmenu_run')
 
 # remote_file ::File.join(Chef::Config[:file_cache_path], tar) do
 #   source node['dmenu']['url']
-#   not_if { ::File.exists?(dmenu) }
+#   not_if { ::File.exist?(dmenu) }
 # end
 bash 'download src' do
   cwd Chef::Config[:file_cache_path]
   code <<-EOH
     wget #{node['dmenu']['url']}
   EOH
-  not_if { ::File.exists?(dmenu) }
+  not_if { ::File.exist?(dmenu) }
 end
 
 bash 'extract module' do
@@ -35,19 +35,19 @@ bash 'extract module' do
   code <<-EOH
     tar xzf #{tar}
   EOH
-  not_if { ::File.exists?(dmenu) }
+  not_if { ::File.exist?(dmenu) }
 end
 
 # remote_file ::File.join(src, diff) do
 #   source node['dmenu']['patch']
-#   not_if { ::File.exists?(dmenu) }
+#   not_if { ::File.exist?(dmenu) }
 # end
 bash 'download patch' do
   cwd src
   code <<-EOH
     wget #{node['dmenu']['patch']}
   EOH
-  not_if { ::File.exists?(dmenu) }
+  not_if { ::File.exist?(dmenu) }
 end
 
 config_mk = ::File.join(src, 'config.mk')
@@ -57,7 +57,7 @@ bash 'patch' do
     patch -p1 < #{diff}
     sed -i -e 's|/usr/local/include/freetype2|/usr/include/freetype2|g' #{config_mk}
   EOH
-  not_if { ::File.exists?(dmenu) }
+  not_if { ::File.exist?(dmenu) }
 end
 
 bash 'make install' do
@@ -66,5 +66,5 @@ bash 'make install' do
     make
     make install
   EOH
-  not_if { ::File.exists?(dmenu) }
+  not_if { ::File.exist?(dmenu) }
 end

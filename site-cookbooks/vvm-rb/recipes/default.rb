@@ -19,6 +19,6 @@ Array(node['rbenv']['user_installs']).each do |rbenv_user|
     user          rbenv_user['user']
     group         rbenv_user['group']
     code          "vvm-rb install -u #{version} #{opts}"
-    not_if        { File.exists?(File.join(node['rbenv']['user_home_root'], rbenv_user['user'], '.vvm-rb')) }
+    not_if        { File.exist?(File.join(node['rbenv']['user_home_root'], rbenv_user['user'], '.vvm-rb')) }
   end
 end

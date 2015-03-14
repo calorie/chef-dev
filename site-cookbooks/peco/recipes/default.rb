@@ -13,7 +13,7 @@ peco = ::File.join('/usr', 'local', 'bin', 'peco')
 
 remote_file ::File.join(Chef::Config[:file_cache_path], tar) do
   source node['peco']['url']
-  not_if { ::File.exists?(peco) }
+  not_if { ::File.exist?(peco) }
 end
 
 bash 'extract_module' do
@@ -22,5 +22,5 @@ bash 'extract_module' do
     tar xzf #{tar}
     mv #{::File.join(src, 'peco')} /usr/local/bin/
   EOH
-  not_if { ::File.exists?(peco) }
+  not_if { ::File.exist?(peco) }
 end
