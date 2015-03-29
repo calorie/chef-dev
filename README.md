@@ -7,11 +7,6 @@ Provisioning development environment like BOXEN.
 
 - Ubuntu, Linux Mint
 
-### Optional
-
-- VirtualBox
-- Vagrant
-
 ## Setup
 
 ```
@@ -41,14 +36,6 @@ $ sed -i -e "s/yuu/[user_name]/g" nodes/dev.json
 $ knife solo init .
 $ knife solo prepare [user_name]@[host]
 $ knife solo cook [user_name]@[host] nodes/dev.json
-```
-
-### Vagrant
-
-Install Vagrant, VirtualBox and:
-
-```
-$ vagrant up
 ```
 
 ## Packages

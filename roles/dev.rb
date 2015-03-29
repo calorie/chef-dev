@@ -5,7 +5,6 @@ recipes = %w{
   sysv-rc-conf
   locale
   ubuntu-change-source-list
-  desktop
   japanese
   build-essential
   readline
