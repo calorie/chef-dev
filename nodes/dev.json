@@ -13,6 +13,7 @@
   "rbenv": {
     "install_pkgs": ["libssl-dev", "git-core", "grep"],
     "user_home_root": "/home",
+    "git_ref": "master",
     "user_installs": [
       {
         "user": "yuu",
