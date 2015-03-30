@@ -9,7 +9,8 @@
 
 user_name  = node['user']
 user_group = node['group']
-dotfiles   = "/home/#{user_name}/dotfiles"
+home       = ::File.join('/home', user_name)
+dotfiles   = ::File.join(home, 'dotfiles')
 
 git dotfiles do
   repository 'https://github.com/calorie/dotfiles.git'
@@ -19,12 +20,11 @@ git dotfiles do
   group user_group
 end
 
+setup = ::File.join(dotfiles, 'script', 'setup')
 bash 'setup dotfiles' do
   cwd dotfiles
-  code <<-EOH
-    echo y | #{dotfiles}/script/setup
-  EOH
-  creates "/home/#{user_name}/.zshrc"
+  code "echo y | #{setup}"
+  creates ::File.join(home, '.zshrc')
   user user_name
   group user_group
 end
