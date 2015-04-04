@@ -39,6 +39,7 @@ recipes = %w{
   vvm-rb
   dotfiles
   perl
+  mysql
 }.map { |r| "recipe[#{r}]" }
 
 name 'dev'
