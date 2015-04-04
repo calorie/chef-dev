@@ -38,6 +38,7 @@ recipes = %w{
   dmenu
   vvm-rb
   dotfiles
+  perl
 }.map { |r| "recipe[#{r}]" }
 
 name 'dev'
