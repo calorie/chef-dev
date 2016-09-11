@@ -147,5 +147,12 @@
   },
   "vagrant": {
     "version": "1.8.5"
+  },
+  "nodejs": {
+    "npm_packages": [
+      {
+        "name": "grunt"
+      }
+    ]
   }
 }
