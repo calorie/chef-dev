@@ -1,45 +1,45 @@
 recipes = %w{
-  apt
-  sudo
-  base
-  sysv-rc-conf
-  locale
-  ubuntu-change-source-list
-  japanese
-  build-essential
-  readline
-  curl
   ag
   apparmor
-  git
-  tig
-  mercurial
-  zsh
+  apt
+  base
+  build-essential
   chsh
-  tmux
-  vim
-  ctags
   cmake
-  fontforge
-  rbenv::user
-  python
-  lua
-  nodejs
   coffee-script
-  golang
-  docker
-  peco
+  ctags
+  curl
   direnv
-  google-chrome
-  trash-cli
-  dropbox
-  vagrant
-  xsel
   dmenu
-  vvm-rb
+  docker
   dotfiles
-  perl
+  dropbox
+  fontforge
+  git
+  golang
+  google-chrome
+  japanese
+  locale
+  lua
+  mercurial
   mysql
+  nodejs
+  peco
+  perl
+  python
+  rbenv::user
+  readline
+  sudo
+  sysv-rc-conf
+  tig
+  tmux
+  trash-cli
+  ubuntu-change-source-list
+  vagrant
+  vim
+  vvm-rb
+  xsel
+  zsh
 }.map { |r| "recipe[#{r}]" }
 
 name 'dev'
