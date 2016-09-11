@@ -154,5 +154,9 @@
         "name": "grunt"
       }
     ]
+  },
+  "locale": {
+    "lang": "ja_JP.UTF-8",
+    "lc_all": "ja_JP.UTF-8"
   }
 }

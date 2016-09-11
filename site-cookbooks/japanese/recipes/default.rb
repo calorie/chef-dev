@@ -10,13 +10,4 @@
 %w{
   language-pack-ja
   ibus-mozc
-  locales
 }.each { |pkg| package pkg }
-
-execute 'locales' do
-  command <<-SHELL
-locale-gen ja_JP.UTF-8
-update-locale LANG=ja_JP.UTF-8
-SHELL
-  action :run
-end
