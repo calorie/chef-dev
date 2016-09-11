@@ -155,5 +155,10 @@
   "locale": {
     "lang": "ja_JP.UTF-8",
     "lc_all": "ja_JP.UTF-8"
+  },
+  "python": {
+    "install_method": "source",
+    "version": "2.7.7",
+    "checksum": "7f49c0a6705ad89d925181e27d0aaa025ee4731ce0de64776c722216c3e66c42"
   }
 }
