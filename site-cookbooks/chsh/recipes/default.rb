@@ -7,8 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
-user_name = node['user']
+include_recipe 'zsh'
 
 execute 'set zsh as default shell' do
-  command "chsh -s /bin/zsh #{user_name}"
+  command "chsh -s /bin/zsh #{node['user']}"
 end

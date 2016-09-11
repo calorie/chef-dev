@@ -7,6 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
+include_recipe 'ark'
+
 ark 'gecode' do
   owner         node['user']
   url           node['gecode']['url']

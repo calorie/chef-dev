@@ -7,6 +7,15 @@
 # All rights reserved - Do Not Redistribute
 #
 
+include_recipe 'cmake'
+include_recipe 'fontforge'
+include_recipe 'git'
+include_recipe 'lua'
+include_recipe 'mercurial'
+include_recipe 'rbenv::user'
+include_recipe 'tmux'
+include_recipe 'zsh'
+
 user_name  = node['user']
 user_group = node['group']
 home       = ::File.join('/home', user_name)
