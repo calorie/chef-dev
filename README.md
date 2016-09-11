@@ -12,7 +12,7 @@ Provisioning development environment like BOXEN.
 ```
 $ sudo add-apt-repository -y ppa:brightbox/ruby-ng
 $ sudo apt-get update
-$ sudo apt-get install -y git-core g++ libxslt-dev libxml2-dev ruby2.1 ruby2.1-dev autoconf build-essential
+$ sudo apt-get install -y git-core g++ libxslt-dev libxml2-dev ruby2.3 ruby2.3-dev autoconf build-essential
 $ sudo gem install bundler --no-rdoc --no-ri
 $ git clone https://github.com/calorie/chef-dev.git
 $ cd chef-dev
