@@ -150,9 +150,6 @@
   },
   "nodejs": {
     "npm_packages": [
-      {
-        "name": "grunt"
-      }
     ]
   },
   "locale": {
