@@ -1,1 +1,1 @@
-default['mysql']['version'] = '5.6'
+default['mysql']['version'] = '5.7'

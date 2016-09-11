@@ -20,15 +20,15 @@
         "group": "yuu",
         "rubies": [
           {
-            "name": "2.2.1",
+            "name": "2.3.1",
             "environment": {
               "RUBY_CONFIGURE_OPTS": "--with-openssl-dir=/usr --with-readline-dir=/usr/include/readline --enable-shared"
             }
           }
         ],
-        "global": "2.2.1",
+        "global": "2.3.1",
         "gems": {
-          "2.2.1": [
+          "2.3.1": [
             { "name": "bundler" },
             { "name": "rubygems-update" },
             { "name": "pry" },
@@ -41,26 +41,21 @@
         "plugins": [
           {
             "name": "ruby-build",
-            "git_ref": "v20150319zf",
-            "git_url": "https://github.com/sstephenson/ruby-build.git"
+            "git_ref": "v20160602",
+            "git_url": "https://github.com/rbenv/ruby-build.git"
           },
           {
             "name": "rbenv-update",
             "git_url": "https://github.com/rkh/rbenv-update.git"
           },
           {
-            "name": "rbenv-gem-rehash",
-            "git_ref": "v1.0.0",
-            "git_url": "https://github.com/sstephenson/rbenv-gem-rehash.git"
-          },
-          {
             "name": "rbenv-default-gems",
             "git_ref": "v1.0.0",
-            "git_url": "https://github.com/sstephenson/rbenv-default-gems.git"
+            "git_url": "https://github.com/rbenv/rbenv-default-gems.git"
           },
           {
             "name": "rbenv-binstubs",
-            "git_ref": "v1.4",
+            "git_ref": "v1.5",
             "git_url": "https://github.com/ianheggie/rbenv-binstubs.git"
           },
           {
@@ -136,21 +131,21 @@
     "host": "tcp://127.0.0.1:4243"
   },
   "direnv": {
-    "version": "v2.4.0"
+    "version": "v2.9.0"
   },
   "dmenu": {
-    "version": "4.5"
+    "version": "4.6"
   },
   "gecode": {
     "version": "3.7.3"
   },
   "packer": {
-    "version": "0.7.2"
+    "version": "0.10.1"
   },
   "peco": {
-    "version": "v0.2.10"
+    "version": "v0.4.2"
   },
   "vagrant": {
-    "version": "1.6.5"
+    "version": "1.8.5"
   }
 }
