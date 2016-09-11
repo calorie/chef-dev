@@ -12,7 +12,6 @@ Gemfile.lock
 bin/*
 .bundle/*
 /cookbooks/
-/.chef
 /vendor/bundle
 /local-mode-cache
 /nodes/*.json
