@@ -11,7 +11,7 @@ recipes = %w{
   curl
   direnv
   dmenu
-  docker
+  docker_base
   dotfiles
   dropbox
   fontforge
