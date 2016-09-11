@@ -14,6 +14,8 @@ include_recipe 'lua'
 include_recipe 'mercurial'
 include_recipe 'rbenv::user'
 include_recipe 'tmux'
+include_recipe 'vim'
+include_recipe 'vvm-rb'
 include_recipe 'zsh'
 
 user_name  = node['user']
