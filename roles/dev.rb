@@ -6,11 +6,9 @@ recipes = %w{
   build-essential
   chsh
   cmake
-  coffee-script
   ctags
   curl
   direnv
-  dmenu
   docker_base
   dotfiles
   dropbox
