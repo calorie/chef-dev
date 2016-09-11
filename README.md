@@ -22,11 +22,11 @@ $ berks vendor cookbooks
 
 ## Provisioning
 
-### Chef Solo
+### Chef Zero
 
 ```
 $ sed -i -e "s/yuu/$USER/g" nodes/dev.json
-$ sudo chef-solo -c solo.rb -j nodes/dev.json
+$ sudo chef-client -z -c solo.rb -j nodes/dev.json
 ```
 
 ### Knife Solo
